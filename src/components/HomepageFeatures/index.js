@@ -7,7 +7,7 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row wrapper">
-        <Link
+          <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
             Расписание богослужений
