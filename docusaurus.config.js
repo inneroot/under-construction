@@ -36,15 +36,11 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,7 +53,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Одинцовское благочиние Одинцовской епархии Русской Православной Церкви',
+        title: 'Одинцовское благочиние',
         logo: {
           alt: 'Одинцовское благочиние Одинцовской епархии Русской Православной Церкви Logo',
           src: 'img/logo.svg',
@@ -67,9 +63,9 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Расписание богослужений',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Материалы', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -81,46 +77,49 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Ссылки',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Московская Патриархия',
+                href: 'http://www.patriarchia.ru/',
               },
+              {
+                label: 'Одинцовская епархия',
+                href: 'https://www.odinceparh.ru/',
+              },
+              {
+                label: 'Одинцовская епархия вконтакте',
+                href: 'https://vk.com/odinceparh',
+              },
+              {
+                label: 'Одинцовское благочиние вконтакте',
+                href: 'https://vk.com/odinblag'
+              }
+
             ],
           },
           {
-            title: 'Community',
+            title: 'Полезные ссылки',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Незнакомое православие',
+                href: 'http://missionary.su/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Православие.ру',
+                href: 'http://www.pravoslavie.ru/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Миссионерская группа «Вы соль земли»',
+                href: 'https://www.vk.com/solzeml',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+                label: 'Акция «Библия за год»',
+                href: 'https://vk.com/bibliyazagod'
+              }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
